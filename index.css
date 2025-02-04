@@ -1,0 +1,19 @@
+body {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;  
+    height: 100vh;            
+    margin: 0;                
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+}
+
+p {
+    text-align: left;
+ }
