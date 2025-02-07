@@ -1,0 +1,53 @@
+.card {
+    padding: 2rem;
+    background-color: lightblue;
+    border-radius: 2rem;
+  }
+  .card__title {
+    font-size: 3rem;
+  }
+  .card__excerpt {
+    margin: 2rem;
+  }
+
+  .card__image {
+      object-fit: contain;
+      aspect-ratio: 16/9; 
+  }
+  .card__more {
+    display: block;
+    text-align: center;
+  }
+  .card__more:hover {
+    border-radius: 3em;
+  }
+  .card__more:active {
+    background-color: rgb(113, 215, 255); 
+    padding: 1rem; 
+  }
+
+  @media screen and (min-width: 1024px) {
+    .card {
+        background-color: navy;
+        color: white;
+    }
+    .card__title {
+        font-size: 4rem;
+    }
+    .card__excerpt {
+        font-size: 2rem;
+    }
+    .card__image {}
+    .card__more {}
+    .card__more:hover {}
+    .card__more:active {}
+  }
+
+  /* You can leave everything below as is — we'll explain flexbox in a later lecture! */
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 8vw;
+  }
