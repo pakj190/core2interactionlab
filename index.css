@@ -5,6 +5,7 @@ body {
     align-items: center;  
     height: 100vh;
     margin: 0;
+    padding: 2em;
 }
 
 .content {
@@ -12,7 +13,10 @@ body {
 }
 
 h1, p, h2 {
-    margin: 10px 0;  
+    margin: 10px 0; 
+    color: blue;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .links {
