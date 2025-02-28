@@ -1,0 +1,45 @@
+body {
+    background-color: black;
+    color: white;
+    margin-left: 30px;
+    font-family: "Spline Sans Mono", serif;
+    font-weight: bold;
+    font-size: 20px;
+    animation: backgroundChange 6s infinite; /* Apply the animation */
+
+}
+
+@keyframes backgroundChange {
+    0% {
+        background-color: black;
+    }
+
+    50% {
+        background-color: navy;
+    }
+
+    100% {
+        background-color: black;
+    }
+}
+
+h1 {
+    font-size: 60px;
+    font-family: "Sigmar One", serif;
+    line-height: 55px;
+}
+
+.pmargins {
+    margin-left: 40px;
+    font-size: 15px;
+}
+
+.small {
+    margin-left: 300px;
+    font-size: 10px;
+}
+
+.colorbox {
+    margin-left: 40px;
+    padding: 1px;
+}

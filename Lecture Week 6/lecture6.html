@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sample Form Elements</title>
+	<link rel="stylesheet" href="lecture.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+	
+	<style>
+		.box {
+			margin: 2rem 0;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>The Night Before the Coding Challenge</h1>
+
+<div class="box">
+	<!-- Example of an Input -->
+	<label for="night">It was the night before the coding challenge. You decide to</label>
+	<select id="night" name="night">
+		<option value="dark">sleep.</option>
+		<option value="stormy">study.</option>
+		<option value="gusty">binge watch a show.</option>
+		<!-- Add as many options as needed -->
+	</select>
+</div>
+
+<div class="box">
+	<!-- Example of a Checkbox -->
+	<div>
+		<label for="odysseus1">When you wake up, you're tired so you go back to bed</label>
+		<input type="checkbox" id="odysseus1" name="odysseus1" checked />
+	</div>
+	<div>
+		<label for="odysseus2">When you wake up, you get ready to head to the lecture.</label>
+		<input type="checkbox" id="odysseus2" name="odysseus2" />
+	</div>
+</div>
+
+<div class="box">
+	<!-- Example of a Radio Button -->
+	<p>You decide to get</p>
+	<div>
+		<input type="radio" id="sheep" name="cyclops" value="sheep" checked />
+		<label for="sheep">iced matcha latte.</label>
+	</div>
+	<div>
+		<input type="radio" id="humans" name="cyclops" value="humans" />
+		<label for="humans">expensive croissant.</label>
+	</div>
+	<div>
+		<input type="radio" id="jellyfish" name="cyclops" value="jellyfish" />
+		<label for="jellyfish">hot black coffee.</label>
+	</div>
+</div>
+
+
+<div class="box">
+	<!-- Example of a Color Picker -->
+	<p>There was a RGB pop quiz.</p>
+	<p>What is the correct one:</p>
+
+	<div class="pmargins">
+		<p>(R) background: color: white;</p>
+		<p>(G) background-color: red;</p>
+		<p>(B) color: red;</p>
+	</div>
+
+	<input class="colorbox" type="color" id="body" name="body" value="#7c0202" />
+</div>
+
+<h2>The challenge is to make a mad lib. </h2>
+
+<div class="box">
+	<!-- Example of a Range Input-->
+	<div>
+		<span>This code challenge was...</span>
+		<input type="range" id="volume" name="volume" min="0" max="11"  />
+		<p class="small">easy hard</p>
+	</div>
+</div>
+	
+</body>
+</html>
