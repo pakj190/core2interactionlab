@@ -1,0 +1,81 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.envelope {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    /* height: 100vh;  If we don't specify this, then the height will be whatever height the content is */
+
+    /* The Magic */
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: auto auto auto; 
+    grid-template-areas:
+        "header header header"
+        "side1 main side2"
+        ". . footer"; /* Period means empty */
+    /* See: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas */
+}
+
+header {
+    grid-area: header;
+    width: 100%;
+    
+    /* Styling */
+    background-color: rgb(188, 92, 169);
+    padding: 1em;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Sigmar One", serif;
+}
+
+.sidecol {
+    grid-area: side1;
+
+    /* Styling */
+    background-color: rgb(205, 121, 194);
+    padding: 2em;
+}
+
+.maincol {
+    grid-area: main;
+
+    /* Styling */
+    background-color: rgb(116, 116, 203);
+    padding: 2em;
+    height: 20rem;
+}
+
+.sidecol2 {
+    grid-area: side2;
+
+    /* Styling */
+    background-color: rgb(237, 162, 234);
+    padding: 2em;
+    /* height: 10rem; */
+}
+
+footer {
+    grid-area: footer;
+
+    /* Styling */
+    background-color: rgb(124, 162, 220);
+    padding: 2em;
+}
+
+@media screen and (max-width: 500px) {
+    .envelope {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header"
+            "side1"
+            "main"
+            "side2"
+            "footer";
+    }
+}
