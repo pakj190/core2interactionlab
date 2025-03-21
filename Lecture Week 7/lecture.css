@@ -79,3 +79,17 @@ footer {
             "footer";
     }
 }
+
+button {
+    padding: 10px;
+    background-color: white;
+    color: purple;
+    border-radius: 10px;
+    border-style: none;
+    margin-top: 20px;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: white;
+}
