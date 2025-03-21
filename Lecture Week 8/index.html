@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Places in Seoul</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        .header {
+            position: sticky;
+            top: 0;
+            background-color: #ea47ff;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 62px;
+            font-weight: bold;
+            z-index: 1000;
+
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .category {
+            font-size: 24px;
+            background-color: #f650ff;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        .category.sticky {
+            position: sticky;
+            top: 0;
+            background-color: #ff47f3;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .places-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .places-list li {
+            background-color: white;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .places-list li:hover {
+            transform: translateX(10px);
+        }
+
+        .category-title {
+            margin-top: 30px;
+            font-size: 28px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        SEOUL LOVE
+    </div>
+
+    <div class="container">
+        <h1>My Favorite Places in Seoul</h1>
+        
+        <div class="category">
+            Cafes
+        </div>
+        <ul class="places-list">
+            <li><a href="#ikseon-eats">Ikseon Eats</a></li>
+            <li><a href="#myeongdong-eats">Myeongdong Eats</a></li>
+            <li><a href="#hongdae-eats">Hongdae Eats</a></li>
+        </ul>
+
+        <div class="category">
+            Restaurants
+        </div>
+        <ul class="places-list">
+            <li><a href="#bukchon-restaurant">Bukchon Restaurant</a></li>
+            <li><a href="#insadong-dining">Insadong Dining</a></li>
+            <li><a href="#gangnam-bbq">Gangnam BBQ</a></li>
+        </ul>
+
+        <div class="category">
+            Shopping
+        </div>
+        <ul class="places-list">
+            <li><a href="#dongdaemun-market">Dongdaemun Market</a></li>
+            <li><a href="#insadong-bazaar">Insadong Bazaar</a></li>
+            <li><a href="#myeongdong-shopping">Myeongdong Shopping</a></li>
+        </ul>
+
+        <div class="category">
+            Parks
+        </div>
+        <ul class="places-list">
+            <li><a href="#hangang-park">Hangang Park</a></li>
+            <li><a href="#bukhansan-mountain">Bukhansan Mountain</a></li>
+            <li><a href="#namsan-tower">Namsan Tower</a></li>
+        </ul>
+
+    </div>
+
+</body>
+</html>
